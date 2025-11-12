@@ -14,7 +14,7 @@ _Insira aqui uma captura de tela do seu site!_
 
 Você pode ver o projeto em ação aqui:
 
-**[Acesse o site](URL_DO_SEU_SITE_AQUI)**
+**[Acesse o site](https://albericojr.github.io/Karla_Design/)**
 
 ---
 
