@@ -1,0 +1,406 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&family=Gochi+Hand&family=Quicksand%3Awght%40400%3B500%3B700"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <title>Karla Design</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+      --primary-pink: #ff69b4;
+      --secondary-lavender: #b19cd9;
+      --accent-neon-green: #00ff7f;
+      --light-pink: #fdf0f4;
+      --dark-text: #3c0c4e;
+      --light-text: #7b4f8a;
+    }
+    /* Adiciona scroll suave para navegação com âncoras */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <div
+    class="relative flex h-auto min-h-screen w-full flex-col bg-[var(--light-pink)] group/design-root overflow-x-hidden"
+    style='font-family: "Quicksand", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[var(--secondary-lavender)] px-4 md:px-10 py-3 bg-[var(--light-pink)] shadow-md">
+        <div class="flex items-center gap-4 text-[var(--dark-text)]">
+          <div class="size-4">
+            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd"
+                d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+          </div>
+          
+          <h2 class="text-[var(--dark-text)] text-lg md:text-2xl font-bold leading-tight tracking-[-0.015em]"
+            style='font-family: "Gochi Hand", cursive;'>
+            Karla Design
+          </h2>
+        </div>
+
+        <button
+          class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-[var(--dark-text)] hover:bg-white/30 transition-colors duration-200"
+          id="mobile-menu-btn" type="button" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <div class="hidden md:flex flex-1 justify-end gap-8">
+          <div class="flex items-center gap-9">
+            <a class="text-[var(--dark-text)] text-base font-medium leading-normal hover:text-[var(--primary-pink)] transition-colors"
+              href="#top-of-page">Home</a>
+            <a class="text-[var(--dark-text)] text-base font-medium leading-normal hover:text-[var(--primary-pink)] transition-colors"
+              href="#services">Serviços</a>
+            <a class="text-[var(--dark-text)] text-base font-medium leading-normal hover:text-[var(--primary-pink)] transition-colors"
+              href="#testimonials">Depoimentos</a>
+            <a class="text-[var(--dark-text)] text-base font-medium leading-normal hover:text-[var(--primary-pink)] transition-colors"
+              href="#contact">Contato</a>
+          </div>
+          <a
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[var(--primary-pink)] text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out"
+            href="#contact">
+            <span class="truncate">Agende Seu Horário</span>
+          </a>
+        </div>
+
+        <div id="mobile-menu"
+          class="hidden absolute top-full left-0 right-0 bg-white border-b border-[var(--secondary-lavender)] shadow-lg md:hidden z-50">
+          <div class="flex flex-col gap-2 p-4">
+            <a class="text-[var(--dark-text)] text-base font-medium leading-normal px-4 py-2 hover:bg-[var(--light-pink)] rounded-lg transition-colors"
+              href="#top-of-page">Home</a>
+            <a class="text-[var(--dark-text)] text-base font-medium leading-normal px-4 py-2 hover:bg-[var(--light-pink)] rounded-lg transition-colors"
+              href="#services">Serviços</a>
+            <a class="text-[var(--dark-text)] text-base font-medium leading-normal px-4 py-2 hover:bg-[var(--light-pink)] rounded-lg transition-colors"
+              href="#testimonials">Depoimentos</a>
+            <a class="text-[var(--dark-text)] text-base font-medium leading-normal px-4 py-2 hover:bg-[var(--light-pink)] rounded-lg transition-colors"
+              href="#contact">Contato</a>
+            <a
+              class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[var(--primary-pink)] text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out mt-2"
+              href="#contact">
+              <span class="truncate">Agende Seu Horário</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      
+      <div class="px-2 sm:px-5 md:px-10 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[1200px] flex-1 w-full">
+          <section id="top-of-page" class="@container">
+            <div class="@[480px]:p-4">
+              <div
+                class="flex  min-h-[450px] sm:min-h-[550px] flex-col gap-4 sm:gap-6 bg-cover bg-left-top bg-no-repeat @[480px]:gap-8 @[480px]:rounded-3xl items-center justify-center p-4 sm:p-4 relative overflow-hidden shadow-2xl"
+                style='background-image: url("./img/hero.png"); transform:rotate(-3deg); margin-bottom:2rem;'>
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-[var(--primary-pink)]/40 via-[var(--secondary-lavender)]/40 to-[var(--accent-neon-green)]/40 z-0">
+                </div>
+                <div
+                  class="absolute -bottom-10 -right-10 w-48 h-48 bg-[var(--accent-neon-green)] opacity-30 rounded-full blur-3xl"
+                  style="transform: rotate(15deg);"></div>
+                <div
+                  class="absolute -top-10 -left-10 w-60 h-60 bg-[var(--secondary-lavender)] opacity-30 rounded-full blur-3xl"
+                  style="transform: rotate(-25deg);"></div>
+                <div
+                  class="flex flex-col gap-2 sm:gap-3 text-center z-10 p-3 sm:p-4 bg-white/20 backdrop-blur-sm rounded-xl max-w-full">
+                  <h1
+                    class="text-white text-3xl sm:text-5xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    style='font-family: "Gochi Hand", cursive; text-shadow: 3px 3px 0px var(--dark-text);'>
+                    Sua Tela, Nossa Arte: Liberte Seu Estilo!
+                  </h1>
+                  <h2
+                    class="text-white text-sm sm:text-base md:text-md font-medium leading-normal @[480px]:text-xl @[480px]:font-medium @[480px]:leading-normal drop-shadow-md">
+                    Mergulhe em um mundo de cores vibrantes e designs ousados. Prepare-se para se expressar com unhas que realmente se destacam!
+                  </h2>
+                </div>
+                <div class="flex-wrap gap-3 sm:gap-4 flex justify-center z-10">
+                  <a
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 sm:h-12 px-4 sm:px-6 bg-[var(--primary-pink)] text-white text-xs sm:text-base font-bold leading-normal tracking-[0.015em] shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out"
+                    href="#contact">
+                    <span class="truncate">Agendar Meu Horário Criativo</span>
+                  </a>
+                  <a
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 sm:h-12 px-4 sm:px-6 bg-[var(--secondary-lavender)] text-[var(--dark-text)] text-xs sm:text-base font-bold leading-normal tracking-[0.015em] shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out"
+                    href="#contact">
+                    <span class="truncate">Solicitar Orçamento Personalizado</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="services">
+            <h2
+              class="text-[var(--dark-text)] text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] px-2 sm:px-4 pb-3 pt-8"
+              style='font-family: "Gochi Hand", cursive;'>
+              Nossos Serviços Criativos
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 p-2 sm:p-4">
+              <div
+                class="flex flex-1 gap-3 sm:gap-4 rounded-2xl bg-white p-4 sm:p-6 flex-col shadow-md hover:shadow-lg transition-all duration-300 ease-in-out border-2 border-[var(--secondary-lavender)]">
+                <div class="text-[var(--primary-pink)]" data-icon="HandWaving" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M220.2,100l-18-31.18a28,28,0,0,0-47.3-1.92L139.56,40.31a28,28,0,0,0-48.12-.63,28,28,0,0,0-43,34.78l3.34,5.79a28,28,0,0,0-22,41.92l38,65.82a87.46,87.46,0,0,0,53.43,41,88.56,88.56,0,0,0,22.92,3A88,88,0,0,0,220.2,100Zm-6.67,62.63A72,72,0,0,1,81.63,180l-38-65.82a12,12,0,0,1,20.79-12l22,38.1a8,8,0,1,0,13.85-8l-38-65.81a12,12,0,0,1,13.5-17.59,11.9,11.9,0,0,1,7.29,5.59l34,58.89a8,8,0,0,0,13.85-8l-26-45h0a12,12,0,0,1,20.78-12L160,107.78a48.08,48.08,0,0,0-11,61,8,8,0,0,0,13.86-8,32,32,0,0,1,11.71-43.71,8,8,0,0,0,2.93-10.93l-10-17.32a12,12,0,0,1,20.78-12l18,31.18A71.49,71.49,0,0,1,213.53,162.62ZM184.27,29.93a8,8,0,0,1,9.8-5.66c15.91,4.27,29,14.11,36.86,27.73a8,8,0,0,1-13.86,8c-5.72-9.92-15.36-17.12-27.14-20.27A8,8,0,0,1,184.27,29.93ZM80.91,237a8,8,0,0,1-11.24,1.33c-11-8.69-20.11-19.58-28.6-34.28a8,8,0,0,1,13.86-8c7.44,12.88,15.27,22.32,24.65,29.72A8,8,0,0,1,80.91,237Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[var(--dark-text)] text-lg sm:text-xl font-bold leading-tight"
+                    style='font-family: "Gochi Hand", cursive;'>
+                    Manicures Expressivas
+                  </h3>
+                  <p class="text-[var(--light-text)] text-sm sm:text-base font-normal leading-normal">
+                    De tons pastéis a pontas neon, faça manicures clássicas e em gel com um toque artístico e único!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 gap-3 sm:gap-4 rounded-2xl bg-white p-4 sm:p-6 flex-col shadow-md hover:shadow-lg transition-all duration-300 ease-in-out border-2 border-[var(--secondary-lavender)]">
+                <div class="text-[var(--primary-pink)]" data-icon="Boot" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M192,112H160V56a16,16,0,0,0-16-16H32a8,8,0,0,0-7.47,10.86c11.06,28.84,8.76,83.71-.22,114.93A8.25,8.25,0,0,0,24,168v32a16,16,0,0,0,16,16H66.11a16,16,0,0,0,7.16-1.69L85.89,208h16.22l12.62,6.31a16,16,0,0,0,7.16,1.69h28.22a16,16,0,0,0,7.16-1.69L169.89,208h16.22l12.62,6.31a16,16,0,0,0,7.16,1.69H232a16,16,0,0,0,16-16V168A56.06,56.06,0,0,0,192,112ZM42.86,56H144V80H112a8,8,0,0,0,0,16h32v16H112a8,8,0,0,0,0,16h80a40.07,40.07,0,0,1,39.2,32H42.25C49,129.16,50.41,85.83,42.86,56ZM232,200H205.89l-12.62-6.31a16,16,0,0,0-7.16-1.69H169.89a16,16,0,0,0-7.16,1.69L150.11,200H121.89l-12.62-6.31a16,16,0,0,0-7.16-1.69H85.89a16,16,0,0,0-7.16,1.69L66.11,200H40V176H232Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[var(--dark-text)] text-lg sm:text-xl font-bold leading-tight"
+                    style='font-family: "Gochi Hand", cursive;'>
+                    Pedicures Relaxantes
+                  </h3>
+                  <p class="text-[var(--light-text)] text-sm sm:text-base font-normal leading-normal">
+                    Permita-se pedicures relaxantes, adicionando um toque de cor vibrante ou um design divertido aos seus pés.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 gap-3 sm:gap-4 rounded-2xl bg-white p-4 sm:p-6 flex-col shadow-md hover:shadow-lg transition-all duration-300 ease-in-out border-2 border-[var(--secondary-lavender)]">
+                <div class="text-[var(--primary-pink)]" data-icon="PaintBrush" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M232,32a8,8,0,0,0-8-8c-44.08,0-89.31,49.71-114.43,82.63A60,60,0,0,0,32,164c0,30.88-19.54,44.73-20.47,45.37A8,8,0,0,0,16,224H92a60,60,0,0,0,57.37-77.57C182.3,121.31,232,76.08,232,32ZM92,208H34.63C41.38,198.41,48,183.92,48,164a44,44,0,1,1,44,44Zm32.42-94.45q5.14-6.66,10.09-12.55A76.23,76.23,0,0,1,155,121.49q-5.9,4.94-12.55,10.09A60.54,60.54,0,0,0,124.42,113.55Zm42.7-2.68a92.57,92.57,0,0,0-22-22c31.78-34.53,55.75-45,69.9-47.91C212.17,55.12,201.65,79.09,167.12,110.87Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[var(--dark-text)] text-lg sm:text-xl font-bold leading-tight"
+                    style='font-family: "Gochi Hand", cursive;'>
+                    Nail Art Lançadora de Tendências
+                  </h3>
+                  <p class="text-[var(--light-text)] text-sm sm:text-base font-normal leading-normal">
+                    Liberte o artista que há em você! Designs personalizados, adornos ousados e estilos que estão em alta e se destacam de verdade.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 gap-3 sm:gap-4 rounded-2xl bg-white p-4 sm:p-6 flex-col shadow-md hover:shadow-lg transition-all duration-300 ease-in-out border-2 border-[var(--secondary-lavender)]">
+                <div class="text-[var(--primary-pink)]" data-icon="Sparkle" data-size="32px" data-weight="regular">
+                  <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M197.58,129.06l-51.61-19-19-51.65a15.92,15.92,0,0,0-29.88,0L78.07,110l-51.65,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0l19-51.61,51.65-19a15.92,15.92,0,0,0,0-29.88ZM140.39,163a15.87,15.87,0,0,0-9.43,9.43l-19,51.46L93,172.39A15.87,15.87,0,0,0,83.61,163h0L32.15,144l51.46-19A15.87,15.87,0,0,0,93,115.61l19-51.46,19,51.46a15.87,15.87,0,0,0,9.43,9.43l51.46,19ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-[var(--dark-text)] text-lg sm:text-xl font-bold leading-tight"
+                    style='font-family: "Gochi Hand", cursive;'>
+                    Tratamentos de Brilho e Destaque
+                  </h3>
+                  <p class="text-[var(--light-text)] text-sm sm:text-base font-normal leading-normal">
+                    De chuvas de glitter a películas holográficas, tratamentos especializados para fazer suas unhas deslumbrar!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+         <section id="testimonials">
+    <h2
+        class="text-[var(--dark-text)] text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] px-2 sm:px-4 pb-3 pt-8"
+        style='font-family: "Gochi Hand", cursive;'>
+        Clientes Felizes com Nossas Artes
+    </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-2 sm:p-4 md:gap-6">
+        
+        <div class="flex flex-col items-stretch">
+            <div
+                class="flex h-full flex-1 flex-col gap-3 sm:gap-4 rounded-2xl bg-white p-4 sm:p-6 shadow-md border-2 border-[var(--secondary-lavender)]">
+                <div
+                    class="w-full max-w-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col border-4 border-[var(--primary-pink]] mx-auto"
+                    style='background-image: url("./img/Depth_01.png");'>
+                </div>
+                <div>
+                    <p class="text-[var(--dark-text)] text-base sm:text-lg font-bold leading-normal text-center"
+                        style='font-family: "Gochi Hand", cursive;'>
+                        Chloe P.
+                    </p>
+                    <p class="text-[var(--light-text)] text-sm sm:text-base font-normal leading-normal text-center">
+                        "Karla Design é o meu lugar favorito para unhas que estão sempre perfeitas e totalmente únicas! Os designs são super criativos, e eu sempre saio de lá com um sorriso."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-stretch">
+            <div
+                class="flex h-full flex-1 flex-col gap-3 sm:gap-4 rounded-2xl bg-white p-4 sm:p-6 shadow-md border-2 border-[var(--secondary-lavender)]">
+                <div
+                    class="w-full max-w-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col border-4 border-[var(--primary-pink)] mx-auto"
+                    style='background-image: url("./img/Depth_02.png");'>
+                </div>
+                <div>
+                    <p class="text-[var(--dark-text)] text-base sm:text-lg font-bold leading-normal text-center"
+                        style='font-family: "Gochi Hand", cursive;'>
+                        Liam K.
+                    </p>
+                    <p class="text-[var(--light-text)] text-sm sm:text-base font-normal leading-normal text-center">
+                        "Eu simplesmente amo a vibe da Karla Design! As artistas são incríveis, sempre trazendo ideias novas. Minhas unhas sempre viram assunto!"
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex flex-col items-stretch">
+            <div
+                class="flex h-full flex-1 flex-col gap-3 sm:gap-4 rounded-2xl bg-white p-4 sm:p-6 shadow-md border-2 border-[var(--secondary-lavender)]">
+                <div
+                    class="w-full max-w-24 bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col border-4 border-[var(--primary-pink)] mx-auto"
+                    style='background-image: url("./img/Depth_03.png");'>
+                </div>
+                <div>
+                    <p class="text-[var(--dark-text)] text-base sm:text-lg font-bold leading-normal text-center"
+                        style='font-family: "Gochi Hand", cursive;'>
+                        Maya S.
+                    </p>
+                    <p class="text-[var(--light-text)] text-sm sm:text-base font-normal leading-normal text-center">
+                        "Se você quer unhas que realmente se destaquem e mostrem sua personalidade, não precisa procurar mais! A Karla Design sempre entrega resultados deslumbrantes."
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+          <section id="contact">
+            <h2
+              class="text-[var(--dark-text)] text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] px-2 sm:px-4 pb-3 pt-8"
+              style='font-family: "Gochi Hand", cursive;'>
+              Fale Conosco!
+            </h2>
+            <form class="flex flex-col gap-3 sm:gap-4 max-w-full md:max-w-[480px] px-2 sm:px-4 py-3">
+              <label class="flex flex-col">
+                <p class="text-[var(--dark-text)] text-base sm:text-lg font-medium leading-normal pb-2">Nome</p>
+                <input
+                  class="form-input flex w-full min-w-0 resize-none overflow-hidden rounded-lg text-[var(--dark-text)] focus:outline-0 focus:ring-0 border-none bg-white focus:border-none h-12 sm:h-14 placeholder:text-[var(--light-text)] p-3 sm:p-4 text-sm sm:text-base font-normal leading-normal shadow-sm border border-[var(--secondary-lavender)]"
+                  placeholder="Seu Nome Criativo" value="" />
+              </label>
+              <label class="flex flex-col">
+                <p class="text-[var(--dark-text)] text-base sm:text-lg font-medium leading-normal pb-2">E-mail</p>
+                <input
+                  class="form-input flex w-full min-w-0 resize-none overflow-hidden rounded-lg text-[var(--dark-text)] focus:outline-0 focus:ring-0 border-none bg-white focus:border-none h-12 sm:h-14 placeholder:text-[var(--light-text)] p-3 sm:p-4 text-sm sm:text-base font-normal leading-normal shadow-sm border border-[var(--secondary-lavender)]"
+                  placeholder="Seu E-mail para Dicas Brilhantes" value="" />
+              </label>
+              <label class="flex flex-col">
+                <p class="text-[var(--dark-text)] text-base sm:text-lg font-medium leading-normal pb-2">Mensagem</p>
+                <textarea
+                  class="form-input flex w-full min-w-0 resize-none overflow-hidden rounded-lg text-[var(--dark-text)] focus:outline-0 focus:ring-0 border-none bg-white focus:border-none min-h-32 sm:min-h-36 placeholder:text-[var(--light-text)] p-3 sm:p-4 text-sm sm:text-base font-normal leading-normal shadow-sm border border-[var(--secondary-lavender)]"
+                  placeholder="Conte-nos sobre sua próxima obra-prima de unhas!"></textarea>
+              </label>
+              <button type="submit"
+                class="flex w-full sm:w-auto cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 sm:h-12 px-4 sm:px-6 bg-[var(--primary-pink)] text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+                <span class="truncate">Envie Seu Brilho!</span>
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+      <footer class="flex justify-center">
+        <div class="flex max-w-[960px] flex-1 flex-col">
+          <footer class="flex flex-col gap-4 sm:gap-6 px-2 sm:px-5 py-8 sm:py-10 text-center @container">
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-4">
+              <a href="#">
+                <div
+                  class="text-[var(--primary-pink)] hover:text-[var(--accent-neon-green)] transform hover:scale-125 transition-transform duration-200"
+                  data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                  <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="text-[var(--primary-pink)] hover:text-[var(--accent-neon-green)] transform hover:scale-125 transition-transform duration-200"
+                  data-icon="FacebookLogo" data-size="24px" data-weight="regular">
+                  <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <p class="text-[var(--light-text)] text-xs sm:text-sm md:text-base font-normal leading-normal">
+              © 2025 Karla Design. Todos os direitos reservados. Coloque seu brilho para jogo!
+            </p>
+          </footer>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  // Funcionalidade de alternância do menu mobile
+  document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Fechar menu ao clicar em um link
+      // Usa a tag 'a' pois os botões agora são âncoras (<a>) também
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          // Pequeno atraso para permitir o scroll antes de fechar o menu
+          setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+          }, 300); 
+        });
+      });
+
+      // Fechar menu ao clicar fora
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('header')) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    }
+  });
+</script>
+
+</html>
